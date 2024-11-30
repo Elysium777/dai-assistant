@@ -40,7 +40,7 @@ const SUBSCRIPTION_TIERS = [
 export default function SubscriptionPage() {
   const [loading, setLoading] = useState(false);
   const [selectedTier, setSelectedTier] = useState<number | null>(null);
-  const { primaryWallet, handleLogOut } = useDynamicContext();
+  const { primaryWallet } = useDynamicContext();
   const { connect } = useConnectWallet();
 
   const handleSubscribe = async (tier: number) => {
@@ -52,8 +52,8 @@ export default function SubscriptionPage() {
       }
 
       // Call smart contract
-      const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS!;
-      const data = `0x23b872dd000000000000000000000000${tier}`; // purchaseSubscription function signature
+      const _ = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS!;
+      const __ = `0x23b872dd000000000000000000000000${tier}`; // purchaseSubscription function signature
 
       // const tx = await primaryWallet.connector.sendTransaction({
       //   to: contractAddress,

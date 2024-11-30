@@ -45,7 +45,7 @@ export default function RidesPage() {
     }
   };
 
-  const handlePayRide = async (ride: RideDetails) => {
+  const handlePayRide = async (_: RideDetails) => {
     // try {
     //   const connector = new AccountKitConnector({
     //     apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY!,
