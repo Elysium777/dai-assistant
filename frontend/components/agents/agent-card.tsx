@@ -13,9 +13,9 @@ export default function AgentCard({
   name,
   description,
   enabled,
-  onToggle,
+  // onToggle,
 }: AgentCardProps) {
-  const [isEnabled, setIsEnabled] = useState(false);
+  const [_, setIsEnabled] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -27,11 +27,11 @@ export default function AgentCard({
     return null;
   }
 
-  const handleToggle = async () => {
-    const newState = !isEnabled;
-    setIsEnabled(newState);
-    await onToggle(newState);
-  };
+  // const handleToggle = async () => {
+  //   const newState = !isEnabled;
+  //   setIsEnabled(newState);
+  //   await onToggle(newState);
+  // };
 
   return (
     <div className="p-6 rounded-lg border border-gray-200 shadow-sm">

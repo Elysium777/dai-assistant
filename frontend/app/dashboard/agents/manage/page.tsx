@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Settings, AlertCircle } from "lucide-react";
-import { Switch } from "components/ui/switch";
+// import {Switch} from "react-native";
+// import { Switch } from "components/ui/switch";
 
 interface AgentSettings {
   id: string;
@@ -19,7 +20,7 @@ interface AgentSettings {
 }
 
 export default function AgentManagementPage() {
-  const [agents, setAgents] = useState<AgentSettings[]>([
+  const [agents, _] = useState<AgentSettings[]>([
     {
       id: "email-summary",
       name: "Email Summary Assistant",
@@ -62,23 +63,23 @@ export default function AgentManagementPage() {
     },
   ]);
 
-  const handleToggle = async (agentId: string, enabled: boolean) => {
-    setAgents((prev) =>
-      prev.map((agent) =>
-        agent.id === agentId ? { ...agent, enabled } : agent
-      )
-    );
-
-    try {
-      await fetch("/api/agents/status", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ agentId, enabled }),
-      });
-    } catch (error) {
-      console.error("Failed to update agent status:", error);
-    }
-  };
+  // const handleToggle = async (agentId: string, enabled: boolean) => {
+  //   setAgents((prev) =>
+  //     prev.map((agent) =>
+  //       agent.id === agentId ? { ...agent, enabled } : agent
+  //     )
+  //   );
+  //
+  //   try {
+  //     await fetch("/api/agents/status", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ agentId, enabled }),
+  //     });
+  //   } catch (error) {
+  //     console.error("Failed to update agent status:", error);
+  //   }
+  // };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -99,10 +100,10 @@ export default function AgentManagementPage() {
                   <h2 className="text-lg font-semibold">{agent.name}</h2>
                   <p className="text-gray-600">{agent.description}</p>
                 </div>
-                <Switch
-                  checked={agent.enabled}
-                  onCheckedChange={(enabled) => handleToggle(agent.id, enabled)}
-                />
+                {/*<Switch*/}
+                {/*  checked={agent.enabled}*/}
+                {/*  onCheckedChange={(enabled) => handleToggle(agent.id, enabled)}*/}
+                {/*/>*/}
               </div>
 
               <div className="flex gap-2">
@@ -138,7 +139,8 @@ export default function AgentManagementPage() {
                           {setting.name}
                         </span>
                         {setting.type === "toggle" ? (
-                          <Switch checked={setting.value} />
+                            <></>
+                          // <Switch checked={setting.value} />
                         ) : (
                           <select
                             value={setting.value}
