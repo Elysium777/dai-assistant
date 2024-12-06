@@ -9,7 +9,7 @@ const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: Layout },
   { name: "Email", href: "/dashboard/agents/email-summary", icon: Mail },
   { name: "Schedule", href: "/dashboard/agents/schedule", icon: Calendar },
-  { name: "Settings", href: "/dashboard/settings/auth", icon: Settings },
+  // { name: "Settings", href: "/dashboard/settings/auth", icon: Settings },
 ];
 
 export default function Navbar() {

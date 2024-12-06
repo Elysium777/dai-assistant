@@ -21,11 +21,11 @@ const navigation = [
     href: "/dashboard/agents/schedule",
     icon: Calendar,
   },
-  {
-    name: "Settings",
-    href: "/dashboard/settings/auth",
-    icon: Settings,
-  },
+  // {
+  //   name: "Settings",
+  //   href: "/dashboard/settings/auth",
+  //   icon: Settings,
+  // },
 ];
 
 export function Sidebar() {

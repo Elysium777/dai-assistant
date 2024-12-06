@@ -5,13 +5,13 @@ import { usePathname } from "next/navigation";
 import {
   Home,
   Settings,
-  Shield,
-  Car,
-  Wallet,
+  // Shield,
+  // Car,
+  // Wallet,
   Mail,
   Calendar,
   Blocks,
-  CreditCard,
+  // CreditCard,
 } from "lucide-react";
 
 const NAVIGATION_ITEMS = [
@@ -45,41 +45,41 @@ const NAVIGATION_ITEMS = [
       },
     ],
   },
-  {
-    section: "Blockchain",
-    items: [
-      {
-        name: "Wallet",
-        href: "#",
-        icon: Wallet,
-      },
-      {
-        name: "Subscription",
-        href: "/dashboard/subscription",
-        icon: Shield,
-      },
-      {
-        name: "Rides",
-        href: "/dashboard/rides",
-        icon: Car,
-      },
-      {
-        name: "Payments",
-        href: "#",
-        icon: CreditCard,
-      },
-    ],
-  },
-  {
-    section: "Settings",
-    items: [
-      {
-        name: "Settings",
-        href: "/dashboard/settings/auth",
-        icon: Settings,
-      },
-    ],
-  },
+  // {
+  //   section: "Blockchain",
+  //   items: [
+  //     {
+  //       name: "Wallet",
+  //       href: "#",
+  //       icon: Wallet,
+  //     },
+  //     {
+  //       name: "Subscription",
+  //       href: "/dashboard/subscription",
+  //       icon: Shield,
+  //     },
+  //     {
+  //       name: "Rides",
+  //       href: "/dashboard/rides",
+  //       icon: Car,
+  //     },
+  //     {
+  //       name: "Payments",
+  //       href: "#",
+  //       icon: CreditCard,
+  //     },
+  //   ],
+  // },
+  // {
+  //   section: "Settings",
+  //   items: [
+  //     {
+  //       name: "Settings",
+  //       href: "/dashboard/settings/auth",
+  //       icon: Settings,
+  //     },
+  //   ],
+  // },
 ];
 
 export default function Sidebar() {
