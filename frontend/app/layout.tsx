@@ -3,7 +3,7 @@ import "./globals.css";
 import { RootProvider } from "./components/providers/root-provider";
 
 export const metadata: Metadata = {
-  title: "AI Data Integration Assistant",
+  title: "Mailgent",
   description: "Secure OAuth integration with Gmail, Calendar, and more.",
 };
 
