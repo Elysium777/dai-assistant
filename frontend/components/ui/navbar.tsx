@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Layout, Mail, Calendar, Settings } from "lucide-react";
+import { Layout, Mail, Calendar } from "lucide-react";
 import { ConnectButton } from "app/components/connect-button";
 
 const navigation = [

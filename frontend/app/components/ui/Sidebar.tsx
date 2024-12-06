@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Home,
-  Settings,
+  // Settings,
   // Shield,
   // Car,
   // Wallet,

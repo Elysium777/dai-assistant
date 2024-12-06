@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Mail, Calendar, Layout, Settings, Menu, X } from "lucide-react";
+import { Mail, Calendar, Layout, Menu, X } from "lucide-react";
 
 const navigation = [
   {
