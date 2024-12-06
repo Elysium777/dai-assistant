@@ -15,6 +15,8 @@ import {
 import Link from "next/link";
 
 export default function LandingPage() {
+  const tokenAddress = process.env.NEXT_PUBLIC_TOKEN_ADDRESS;
+
   return (
     <main className="w-full min-h-[calc(100vh-4rem)] pt-16">
       {/* Hero Section */}
@@ -35,10 +37,11 @@ export default function LandingPage() {
               Get Started <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="#features"
+              href={`https://fun.virtuals.io/agents/${tokenAddress}`}
+              replace={false}
               className="px-6 py-3 bg-gray-100 text-gray-900 rounded-lg hover:bg-gray-200 transition"
             >
-              Learn More
+              Buy Token
             </Link>
           </div>
         </div>
