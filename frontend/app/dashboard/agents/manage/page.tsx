@@ -23,7 +23,7 @@ export default function AgentManagementPage() {
   const [agents, _] = useState<AgentSettings[]>([
     {
       id: "email-summary",
-      name: "Email Summary Assistant",
+      name: "Mailgent Demo",
       description: "Analyzes and summarizes your emails daily",
       enabled: true,
       requiredAuth: ["gmail"],

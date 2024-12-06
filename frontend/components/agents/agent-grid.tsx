@@ -14,7 +14,7 @@ export default function AgentGrid() {
   const [mounted, setMounted] = useState(false);
   const [agents, setAgents] = useState<Agent[]>([
     {
-      name: "Email Summary Assistant",
+      name: "Mailgent Demo",
       description: "Analyzes unread emails and generates daily summaries",
       enabled: true,
     },

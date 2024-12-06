@@ -10,7 +10,7 @@ const SUBSCRIPTION_TIERS = [
     name: "Basic",
     price: "100 USDC",
     features: [
-      "Email Summary Assistant",
+      "Mailgent Demo",
       "Basic Calendar Integration",
       "Manual Ride Scheduling",
     ],

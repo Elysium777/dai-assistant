@@ -43,7 +43,7 @@ export default function EmailSummaryPage() {
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-3">
           <Mail className="w-8 h-8 text-blue-600" />
-          <h1 className="text-2xl font-bold">Email Summary Assistant</h1>
+          <h1 className="text-2xl font-bold">Mailgent Demo</h1>
         </div>
         <button
           onClick={generateSummary}
