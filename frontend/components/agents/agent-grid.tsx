@@ -15,7 +15,7 @@ export default function AgentGrid() {
   const [agents, setAgents] = useState<Agent[]>([
     {
       name: "Mailgent Demo",
-      description: "Analyzes unread emails and generates daily summaries",
+      description: "Your personal crypto assistant. Execute trades, analyze projects, and manage investments directly via email commands",
       enabled: true,
     },
     {
