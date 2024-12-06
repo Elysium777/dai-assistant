@@ -3,8 +3,9 @@ import "./globals.css";
 import { RootProvider } from "./components/providers/root-provider";
 
 export const metadata: Metadata = {
-  title: "Mailgent",
-  description: "Secure OAuth integration with Gmail, Calendar, and more.",
+    title: "Mailgent",
+    icons: "/icon.jpg",
+    description: "Secure OAuth integration with Gmail, Calendar, and more.",
 };
 
 export default function RootLayout({
